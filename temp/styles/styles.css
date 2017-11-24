@@ -954,3 +954,21 @@ img{
     
 }
 
+.discover-US__header{
+        color:rgba(47,85,140,1);
+        text-align:center;
+    }
+
+.discover-US__img{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        margin-top:50px;
+        -ms-flex-wrap:wrap;
+            flex-wrap:wrap;
+        -ms-flex-pack:distribute;
+            justify-content:space-around;
+    }
+
+
+
