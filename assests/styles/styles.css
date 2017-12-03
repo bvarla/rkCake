@@ -11,7 +11,8 @@
 @import "modules/_row";
 @import "modules/_testimonial";
 @import "modules/_generic-content-container";
-@import "modules/_discover-US.css";
-
-
-
+@import "modules/_discover-US";
+@import "modules/_contact-Form";
+@import "modules/_site-footer";
+@import "modules/_flavour";
+@import "modules/_cake-Gallery";

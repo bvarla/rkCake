@@ -1,0 +1,60 @@
+.flavor_container{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 80px;
+    height: 600px;
+    justify-content: space-around;
+
+    &__guide_img{
+       height: 500px;
+    }
+}
+
+
+.flavours{
+
+    &__navItems{
+       height: 375px;
+       background-color: gray;
+       width:40%;
+       ul{
+        
+     }
+
+     li{
+         text-align: center;
+         border-bottom:1px solid #CCC;
+         padding-top:50px;
+         list-style:none;
+         padding-bottom:50px;
+         background-color:whitesmoke;
+     }
+
+     li:hover{
+         background-color:lightgoldenrodyellow;
+         transition: linear all 0.40;
+     }
+
+     li:active{
+        background-color: orange;
+        transition: linear all 0.40;
+    }
+
+
+     /* li:last-child{
+         padding-bottom:100px;
+     } */
+    }    
+}
+
+.cakeFlavors{
+    display:block;
+}
+
+.icingFlavors{
+    display:none;
+}
+
+.fillings{
+    display:none;
+}

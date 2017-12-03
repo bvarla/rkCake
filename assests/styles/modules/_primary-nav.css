@@ -1,7 +1,12 @@
 .primary-nav{
 
     &--pull-right{
-        float:right;
+        text-align:center;
+        margin-top:10%;
+        @mixin atMedium{
+            margin-top:0;
+            float: right;
+        }
     }
 
     ul{
@@ -12,8 +17,11 @@
 
     li{
         list-style: none;
-        float: left;
         padding-right: 20px;
+        padding:16px 0 20px 16px;
+        @mixin atMedium{
+            float: left;
+        }
     }
 
     a{
@@ -21,6 +29,15 @@
         font-weight: 200;
         display: block;
         text-decoration: none;
-        padding:16px 0;
+        transition: 0.25s;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom 0.25;
+    }
+
+    a:hover{
+        color: #ffffff;
+        padding-bottom:  4px;
+        text-decoration: none;
+        border-bottom: 2px solid orange;
     }
 }

@@ -3,6 +3,11 @@
     font-weight: 300;
     text-align: center;
 
+    &__header{
+        color:rgba(47,85,140,1);
+        text-align:center;
+    }
+
     @mixin atSmall{
         font-size:3.75rem;
     }

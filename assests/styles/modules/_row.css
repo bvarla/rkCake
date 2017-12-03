@@ -69,6 +69,7 @@
         }
     
         &__large-4 {
+          align-items: flex-start;
           float:left;
           width:28.33%;
       }
