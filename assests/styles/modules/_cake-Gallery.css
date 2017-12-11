@@ -1,3 +1,27 @@
+.my-gallery {
+  width: 100%;
+  min-height: 800px;
+  background-color: whitesmoke;
+  overflow: scroll;
+}
+
+.my-gallery img {
+  position:relative;
+  width: 500px;
+  height: auto;
+  background:none;
+  margin-left: 0%;
+}
+.my-gallery figure {
+  display: block;
+  float: left;
+  margin: 10px 15px 5px 10px;
+  width: 250px;
+}
+.my-gallery figcaption {
+  display: none;
+}
+
 .cake-Gallery{
 
     &__img_container{
@@ -34,9 +58,7 @@
     box-shadow: 0 1px 3px -2px rgba(0,0,0,.5);
     transition: all 0.3s ease-out;
   }
-  .photo-stack img:nth-child(1) {
-    z-index: 999;
-  }
+
   .photo-stack img:nth-child(2) {
     transform: rotate3d(0,0,1,3deg);
   }

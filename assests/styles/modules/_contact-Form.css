@@ -3,7 +3,7 @@
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-    width: 50%; /* Full width */
+    width: 70%; /* Full width */
     padding: 12px; /* Some padding */  
     border: 1px solid #ccc; /* Gray border */
     border-radius: 4px; /* Rounded borders */
@@ -15,18 +15,23 @@ input[type=text], select, textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: #4CAF50;
+		background-color: #ed6362;
+		border: 1px solid #ed6362;
     color: white;
     padding: 12px 20px;
-    height: 50px;
+		height: 50px;
+		width: 70%; /* Full width */
+		border-radius: 50px;
+    padding: 12px;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-    background-color: #45a049;
+		background-color: #fff;
+		border: 1px solid #ed6362;
+		color: #36454f;
 }
 
 
@@ -191,30 +196,55 @@ input:focus, textarea:focus {
 	}
 }
 
+.contactUS{
+	/* background-color: #36454f; */
+}
+
+/*Insert this style in your css*/
+.fontAwesome {
+  font-family: Helvetica, 'FontAwesome', sans-serif;
+}
+
+input[type="text"]{
+	border-radius: 50px;
+	background-color: rgba(17, 16, 16, 0.205);
+}
+
 .contact-Form{
-    width: 50%;
+		width: 100%;
+		margin-top: 5px;
+		@mixin atMedium{
+			width: 50%;
+			margin-top: 0;
+	}
    &__test{
-    display: flex;
+		display: flex;
+		flex-wrap:wrap;
     margin-top: 50px;
     justify-content: space-evenly;
    }
 
    &__address_map{
-    width: 40%;
+		width: 100%;
+		@mixin atMedium{
+			width: 40%;
+	}
+		
    }
 
     &__flex-field{
     height:65px; 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     }
 
     &__submit{
-        text-align: center;
+				text-align: center;
     }
 
     &__address_info_container{
-        display: flex;
+				display: flex;
+				color: #f88d6c;
         margin-top: 45px;
         justify-content: space-around;
     }
@@ -223,7 +253,7 @@ input:focus, textarea:focus {
 
 .fa {
     padding: 10px;
-    font-size: 30px;
+    font-size: 15px;
     width: 35px;
     text-align: center;
     text-decoration: none;

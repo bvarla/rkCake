@@ -8,6 +8,16 @@
         text-align:center;
     }
 
+    &_container{
+        text-align: center;
+
+        h1{
+            color: #ed6362;
+            display: inline-block;
+            border-bottom: 4px solid #f88d6c;
+        }
+    }
+
     @mixin atSmall{
         font-size:3.75rem;
     }

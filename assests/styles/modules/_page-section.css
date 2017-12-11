@@ -1,6 +1,10 @@
 .page-section{
     padding: 4.5rem 0;
 
+    &_avoid-page-section{
+        padding:0;
+    }
+
     &--testimonials{
         background-color:#e0e6ef;
         @mixin atLarge{

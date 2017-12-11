@@ -8,6 +8,9 @@
     &__guide_img{
        height: 500px;
     }
+    h4{
+        color: #f88d6c;
+    }
 }
 
 
@@ -15,7 +18,7 @@
 
     &__navItems{
        height: 375px;
-       background-color: gray;
+       background-color: #ed6362;
        width:40%;
        ul{
         
@@ -31,14 +34,11 @@
      }
 
      li:hover{
-         background-color:lightgoldenrodyellow;
+         background-color:#36454f;
+         color: white;
          transition: linear all 0.40;
      }
 
-     li:active{
-        background-color: orange;
-        transition: linear all 0.40;
-    }
 
 
      /* li:last-child{
