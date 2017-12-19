@@ -34,7 +34,7 @@ gulp.task('optimizeImages',['deleteDistFolder'],function(){
         interlaced:true,
         mutlipass:true
     }))
-    .pipe(gulp.dest("./docs/assests/images"));
+    .pipe(gulp.dest("./docs/assests/Images"));
 });
 
 gulp.task('usemin',['deleteDistFolder','styles','scripts'], function(){
