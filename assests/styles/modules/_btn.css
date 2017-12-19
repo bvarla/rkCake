@@ -7,8 +7,14 @@
     display:inline-block;
 
    &--orange{
-       background-color: #d59541;
+       background-color: #ed6362;
    }
+
+   &--orange:hover{
+    background-color: #fff;
+    border: 1px solid #ed6362;
+    color: #36454f;
+}
 
    &--large{
        padding:1.1rem 1.9rem;

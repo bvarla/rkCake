@@ -11260,42 +11260,35 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var Testimonials = function () {
-    function Testimonials() {
-        _classCallCheck(this, Testimonials);
+var Testimonials = function Testimonials() {
+    _classCallCheck(this, Testimonials);
+}
 
-        this.slideIndex = 1;
-        this.showDivs(this.slideIndex);
+// this.slideIndex = 1;
+// this.showDivs( this.slideIndex);
 
-        function plusDivs(n) {
-            this.showDivs(this.slideIndex += n);
-        }
-    }
+// function plusDivs(n) {
+// this.showDivs( this.slideIndex += n);
+// }
 
-    _createClass(Testimonials, [{
-        key: "showDivs",
-        value: function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides-Testi");
-            if (n > x.length) {
-                this.slideIndex = 1;
-            }
-            if (n < 1) {
-                this.slideIndex = x.length;
-            }
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[this.slideIndex - 1].style.display = "flex";
-        }
-    }]);
+// function showMeDivs(n) {
+// console.log("test mee" + n);
+// }
 
-    return Testimonials;
-}();
+
+//  showDivs(n) {
+//     var i;
+//     var x = document.getElementsByClassName("mySlides-Testi");
+//     if (n > x.length) {this.slideIndex = 1}    
+//     if (n < 1) {this.slideIndex = x.length}
+//     for (i = 0; i < x.length; i++) {
+//         x[i].style.display = "none";  
+//     }
+//     x[this.slideIndex-1].style.display = "flex";  
+//     }
+;
 
 exports.default = Testimonials;
 

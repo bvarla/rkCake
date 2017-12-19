@@ -3,21 +3,32 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
-        <title>Clear View Escapes</title>
+        <title>Raska Custom Cakes</title>
         <meta name="keywords" content="Travel planng, travel bundles, travel escapes, affordable travel">
         <meta name="description" content="Your clarityy. One trip away. We create soul restoring journeys that inspire you to be you.">
-
+       
+        <!--build:css assests/styles/styles.css -->
         <link href="./assests/styles/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- endbuild -->
+
         
+        <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css'>
         <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css'>
+        
+        <!--build:css assests/styles/styles.css -->
         <link rel="stylesheet" href="./temp/styles/styles.css">
+        <!-- endbuild -->
         
         <title></title>
-        <script src="http://maps.google.com/maps/api/js"></script>
-        <script src="./assests/gmaps.js"></script>
-        <script src="./assests/macy.js"></script>
+             <script src="http://maps.google.com/maps/api/js"></script>
+
+           <!-- build:js assests/vendor/gmaps.js -->
+           <script src="./assests/styles/vendor/gmaps.js"></script>
+           <!-- endbuild -->  
+ 
+
+        
         <style type="text/css">
           #map {
             width: 100%;
@@ -112,245 +123,245 @@
                 
         <!-- ********************************* End About- US ****************************** -->        
             <div id="gallery"  data-matching-link="#our-gallery" class="page-section cake-Gallery">
+               
                 <div class="section-title_container"> <h1 class="section-title__header">Gallery</h1></div>
 
                 <div class="cake-Gallery__img_container">
                     
-                    <div id="imageSlide1" class='photo-stack' onclick="gallerySLider(0)">
-                        <img  class="cake-Gallery__img" src="./assests/Images/gallery/weddingCakes/9.jpg">
-                        <img  class="cake-Gallery__img" src="./assests/Images/gallery/weddingCakes/4.jpg">
-                        <img  class="cake-Gallery__img" src="./assests/Images/gallery/weddingCakes/19.jpg">
-                    </div> 
-                    
-                    <div id="imageSlide2" class='photo-stack' onclick="gallerySLider(1)">
-                            <img  class="cake-Gallery__img" src="./assests/Images/gallery/partyCakes.jpg">
-                            <img  class="cake-Gallery__img" src="./assests/Images/gallery/edible.jpg">
-                            <img  class="cake-Gallery__img" src="./assests/Images/gallery/weddingCakeSugarFlowers/5.jpg">
-                    </div> 
+                    <div class="segmented-control" style="width: 80%;margin-top:50px;margin-bottom:50px; color: #ed6362">
+                        <input type="radio" name="sc-1-1" id="sc-1-1-1" onclick="gallerySLider(0)" checked>
+                        <input type="radio" name="sc-1-1" id="sc-1-1-2" onclick="gallerySLider(1)">
+                        <input type="radio" name="sc-1-1" id="sc-1-1-3" onclick="gallerySLider(2)">
+                        <input type="radio" name="sc-1-1" id="sc-1-1-4" onclick="gallerySLider(3)">
+                        <label for="sc-1-1-1" data-value="Wedding Cakes">Wedding Cakes</label>
+                        <label for="sc-1-1-2" data-value="Cake Flowers">Cake Flowers</label>
+                        <label for="sc-1-1-3" data-value="Desserts">Desserts</label>
+                        <label for="sc-1-1-4" data-value="Toppers">Toppers</label>
+                      </div>
 
-                        <div id="imageSlide3" class='photo-stack' onclick="gallerySLider(2)">
-                                <img  class="cake-Gallery__img" src="./assests/Images/gallery/desserts/1.jpg">
-                                <img  class="cake-Gallery__img" src="./assests/Images/gallery/desserts/1.jpg">
-                                <img  class="cake-Gallery__img" src="./assests/Images/gallery/desserts/4.jpg">
-                        </div>      
+                      <select class="dropDown-control" onchange="gallerySLider(this.value)" style="background-color:white;border-color: coral;width:200px;color:pink">
+                        <option value=0>Wedding Cakes</option>
+                        <option value=1>Cake Flowers</option>
+                        <option value=2>Desserts</option>
+                        <option value=3>Toppers</option>
+                      </select>      
 
                 </div> 
                                 
-                <div id="macy-r" class="my-gallery  panel panel-One" itemscope itemtype="http://schema.org/ImageGallery">
-                
-                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a href="./assests/Images/gallery/weddingCakes/1.jpg" itemprop="contentUrl" data-size="3024x4032">
-                            <img src="./assests/Images/gallery/weddingCakes/1.jpg" itemprop="thumbnail" alt="Image description" />
-                        </a>
-                        <figcaption itemprop="caption description">Image caption  1</figcaption>                                                        
-                    </figure>
-                
-                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a href="./assests/Images/gallery/weddingCakes/2.jpg" itemprop="contentUrl" data-size="1367x2048">
-                            <img src="./assests/Images/gallery/weddingCakes/2.jpg" itemprop="thumbnail" alt="Image description" />
-                        </a>
-                        <figcaption itemprop="caption description">Image caption  1</figcaption>                                                
-                    </figure>
-                
-                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a href="./assests/Images/gallery/weddingCakes/3.jpg" itemprop="contentUrl" data-size="1024x1024">
-                            <img src="./assests/Images/gallery/weddingCakes/3.jpg" itemprop="thumbnail" alt="Image description" />
-                        </a>
-                        <figcaption itemprop="caption description">Image caption  1</figcaption>                            
-                    </figure>
-                
-                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a href="./assests/Images/gallery/weddingCakes/4.jpg" itemprop="contentUrl" data-size="1024x1024">
-                            <img src="./assests/Images/gallery/weddingCakes/4.jpg" itemprop="thumbnail" alt="Image description" />
-                        </a>
-                        <figcaption itemprop="caption description">Image caption  1</figcaption>                                                        
-                    </figure>
-                
-                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a href="./assests/Images/gallery/weddingCakes/5.jpg" itemprop="contentUrl" data-size="1024x1024">
-                            <img src="./assests/Images/gallery/weddingCakes/5.jpg" itemprop="thumbnail" alt="Image description" />
-                        </a>
-                        <figcaption itemprop="caption description">Image caption  1</figcaption>                                                
-                    </figure>
-                
-                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a href="./assests/Images/gallery/weddingCakes/6.jpg" itemprop="contentUrl" data-size="1024x1024">
-                            <img src="./assests/Images/gallery/weddingCakes/6.jpg" itemprop="thumbnail" alt="Image description" />
-                        </a>
-                        <figcaption itemprop="caption description">Image caption  1</figcaption>                            
-                    </figure>
-                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a href="./assests/Images/gallery/weddingCakes/7.jpg" itemprop="contentUrl" data-size="1024x1024">
-                            <img src="./assests/Images/gallery/weddingCakes/7.jpg" itemprop="thumbnail" alt="Image description" />
-                        </a>
-                        <figcaption itemprop="caption description">Image caption  1</figcaption>                                                        
-                    </figure>
-                
-                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a href="./assests/Images/gallery/weddingCakes/8.jpg" itemprop="contentUrl" data-size="1024x1024">
-                            <img src="./assests/Images/gallery/weddingCakes/8.jpg" itemprop="thumbnail" alt="Image description" />
-                        </a>
-                        <figcaption itemprop="caption description">Image caption  1</figcaption>                                                
-                    </figure>
-                
-                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a href="./assests/Images/gallery/weddingCakes/9.jpg" itemprop="contentUrl" data-size="1024x1024">
-                            <img src="./assests/Images/gallery/weddingCakes/9.jpg" itemprop="thumbnail" alt="Image description" />
-                        </a>
-                        <figcaption itemprop="caption description">Image caption  1</figcaption>                            
-                    </figure>
-                
-                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a href="./assests/Images/gallery/weddingCakes/10.jpg" itemprop="contentUrl" data-size="1024x1024">
-                            <img src="./assests/Images/gallery/weddingCakes/10.jpg" itemprop="thumbnail" alt="Image description" />
-                        </a>
-                        <figcaption itemprop="caption description">Image caption  1</figcaption>                                                        
-                    </figure>
-                
-                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a href="./assests/Images/gallery/weddingCakes/11.jpg" itemprop="contentUrl" data-size="1024x1024">
-                            <img src="./assests/Images/gallery/weddingCakes/11.jpg" itemprop="thumbnail" alt="Image description" />
-                        </a>
-                        <figcaption itemprop="caption description">Image caption  1</figcaption>                                                
-                    </figure>
-                
-                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a href="./assests/Images/gallery/weddingCakes/12.jpg" itemprop="contentUrl" data-size="1024x1024">
-                            <img src="./assests/Images/gallery/weddingCakes/12.jpg" itemprop="thumbnail" alt="Image description" />
-                        </a>
-                        <figcaption itemprop="caption description">Image caption  1</figcaption>                            
-                    </figure>
-                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a href="./assests/Images/gallery/weddingCakes/13.jpg" itemprop="contentUrl" data-size="1024x1024">
-                            <img src="./assests/Images/gallery/weddingCakes/13.jpg" itemprop="thumbnail" alt="Image description" />
-                        </a>
-                        <figcaption itemprop="caption description">Image caption  1</figcaption>                                                        
-                    </figure>
-                
-                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a href="./assests/Images/gallery/weddingCakes/14.jpg" itemprop="contentUrl" data-size="1024x1024">
-                            <img src="./assests/Images/gallery/weddingCakes/14.jpg" itemprop="thumbnail" alt="Image description" />
-                        </a>
-                        <figcaption itemprop="caption description">Image caption  1</figcaption>                                                
-                    </figure>
-                
-                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a href="./assests/Images/gallery/weddingCakes/15.jpg" itemprop="contentUrl" data-size="1024x1024">
-                            <img src="./assests/Images/gallery/weddingCakes/15.jpg" itemprop="thumbnail" alt="Image description" />
-                        </a>
-                        <figcaption itemprop="caption description">Image caption  1</figcaption>                            
-                    </figure>
-                
-                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a href="./assests/Images/gallery/weddingCakes/16.jpg" itemprop="contentUrl" data-size="1024x1024">
-                            <img src="./assests/Images/gallery/weddingCakes/16.jpg" itemprop="thumbnail" alt="Image description" />
-                        </a>
-                        <figcaption itemprop="caption description">Image caption  1</figcaption>                                                        
-                    </figure>
-                
-                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a href="./assests/Images/gallery/weddingCakes/17.jpg" itemprop="contentUrl" data-size="1024x1024">
-                            <img src="./assests/Images/gallery/weddingCakes/17.jpg" itemprop="thumbnail" alt="Image description" />
-                        </a>
-                        <figcaption itemprop="caption description">Image caption  1</figcaption>                                                
-                    </figure>
-                
-                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a href="./assests/Images/gallery/weddingCakes/18.jpg" itemprop="contentUrl" data-size="1024x1024">
-                            <img src="./assests/Images/gallery/weddingCakes/18.jpg" itemprop="thumbnail" alt="Image description" />
-                        </a>
-                        <figcaption itemprop="caption description">Image caption  1</figcaption>                            
-                    </figure>
-                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a href="./assests/Images/gallery/weddingCakes/19.jpg" itemprop="contentUrl" data-size="1024x1024">
-                            <img src="./assests/Images/gallery/weddingCakes/19.jpg" itemprop="thumbnail" alt="Image description" />
-                        </a>
-                        <figcaption itemprop="caption description">Image caption  1</figcaption>                            
-                    </figure>
-                
-                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a href="./assests/Images/gallery/weddingCakes/20.jpg" itemprop="contentUrl" data-size="1024x1024">
-                            <img src="./assests/Images/gallery/weddingCakes/20.jpg" itemprop="thumbnail" alt="Image description" />
-                        </a>
-                        <figcaption itemprop="caption description">Image caption  1</figcaption>                                                        
-                    </figure>
-                
-                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a href="./assests/Images/gallery/weddingCakes/21.jpg" itemprop="contentUrl" data-size="1024x1024">
-                            <img src="./assests/Images/gallery/weddingCakes/21.jpg" itemprop="thumbnail" alt="Image description" />
-                        </a>
-                        <figcaption itemprop="caption description">Image caption  1</figcaption>                                                
-                    </figure>
-                
-                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a href="./assests/Images/gallery/weddingCakes/22.jpg" itemprop="contentUrl" data-size="1024x1024">
-                            <img src="./assests/Images/gallery/weddingCakes/22.jpg" itemprop="thumbnail" alt="Image description" />
-                        </a>
-                        <figcaption itemprop="caption description">Image caption  1</figcaption>                            
-                    </figure>  
-                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a href="./assests/Images/gallery/weddingCakes/23.jpg" itemprop="contentUrl" data-size="1024x1024">
-                            <img src="./assests/Images/gallery/weddingCakes/23.jpg" itemprop="thumbnail" alt="Image description" />
-                        </a>
-                        <figcaption itemprop="caption description">Image caption  1</figcaption>                            
-                    </figure>                                              
+                    <div id="macy-r" class="my-gallery  panel panel-One" itemscope itemtype="http://schema.org/ImageGallery">
+                    
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="./assests/Images/gallery/weddingCakes/1.jpg" itemprop="contentUrl" data-size="3024x4032">
+                                <img src="./assests/Images/gallery/weddingCakes/1-thumb.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Image caption  1</figcaption>                                                        
+                        </figure>
+                    
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="./assests/Images/gallery/weddingCakes/2.jpg" itemprop="contentUrl" data-size="1367x2048">
+                                <img src="./assests/Images/gallery/weddingCakes/2-thumb.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Image caption  1</figcaption>                                                
+                        </figure>
+                    
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="./assests/Images/gallery/weddingCakes/3.jpg" itemprop="contentUrl" data-size="535x800">
+                                <img src="./assests/Images/gallery/weddingCakes/3-thumb.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Image caption  1</figcaption>                            
+                        </figure>
+                    
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="./assests/Images/gallery/weddingCakes/4.jpg" itemprop="contentUrl" data-size="960x640">
+                                <img src="./assests/Images/gallery/weddingCakes/4-thumb.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Image caption  1</figcaption>                                                        
+                        </figure>
+                    
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="./assests/Images/gallery/weddingCakes/5.jpg" itemprop="contentUrl" data-size="540x960">
+                                <img src="./assests/Images/gallery/weddingCakes/5-thumb.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Image caption  1</figcaption>                                                
+                        </figure>
+                    
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="./assests/Images/gallery/weddingCakes/6.jpg" itemprop="contentUrl" data-size="750x1334">
+                                <img src="./assests/Images/gallery/weddingCakes/6-thumb.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Image caption  1</figcaption>                            
+                        </figure>
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="./assests/Images/gallery/weddingCakes/7.jpg" itemprop="contentUrl" data-size="540x960">
+                                <img src="./assests/Images/gallery/weddingCakes/7-thumb.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Image caption  1</figcaption>                                                        
+                        </figure>
+                    
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="./assests/Images/gallery/weddingCakes/8.jpg" itemprop="contentUrl" data-size="2048x1365">
+                                <img src="./assests/Images/gallery/weddingCakes/8-thumb.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Image caption  1</figcaption>                                                
+                        </figure>
+                    
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="./assests/Images/gallery/weddingCakes/9.jpg" itemprop="contentUrl" data-size="640x456">
+                                <img src="./assests/Images/gallery/weddingCakes/9-thumb.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Image caption  1</figcaption>                            
+                        </figure>
+                    
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="./assests/Images/gallery/weddingCakes/10.jpg" itemprop="contentUrl" data-size="1362x2048">
+                                <img src="./assests/Images/gallery/weddingCakes/10-thumb.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Image caption  1</figcaption>                                                        
+                        </figure>
+                    
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="./assests/Images/gallery/weddingCakes/11.jpg" itemprop="contentUrl" data-size="960x640">
+                                <img src="./assests/Images/gallery/weddingCakes/11-thumb.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Image caption  1</figcaption>                                                
+                        </figure>
+                    
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="./assests/Images/gallery/weddingCakes/12.jpg" itemprop="contentUrl" data-size="1365x2048">
+                                <img src="./assests/Images/gallery/weddingCakes/12-thumb.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Image caption  1</figcaption>                            
+                        </figure>
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="./assests/Images/gallery/weddingCakes/13.jpg" itemprop="contentUrl" data-size="640x1136">
+                                <img src="./assests/Images/gallery/weddingCakes/13-thumb.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Image caption  1</figcaption>                                                        
+                        </figure>
+                    
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="./assests/Images/gallery/weddingCakes/14.jpg" itemprop="contentUrl" data-size="2048x1367">
+                                <img src="./assests/Images/gallery/weddingCakes/14-thumb.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Image caption  1</figcaption>                                                
+                        </figure>
+                    
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="./assests/Images/gallery/weddingCakes/15.jpg" itemprop="contentUrl" data-size="2048x1368">
+                                <img src="./assests/Images/gallery/weddingCakes/15-thumb.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Image caption  1</figcaption>                            
+                        </figure>
+                    
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="./assests/Images/gallery/weddingCakes/16.jpg" itemprop="contentUrl" data-size="1224x1632">
+                                <img src="./assests/Images/gallery/weddingCakes/16-thumb.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Image caption  1</figcaption>                                                        
+                        </figure>
+                    
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="./assests/Images/gallery/weddingCakes/17.jpg" itemprop="contentUrl" data-size="540x960">
+                                <img src="./assests/Images/gallery/weddingCakes/17-thumb.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Image caption  1</figcaption>                                                
+                        </figure>
+                    
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="./assests/Images/gallery/weddingCakes/18.jpg" itemprop="contentUrl" data-size="1200x1800">
+                                <img src="./assests/Images/gallery/weddingCakes/18-thumb.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Image caption  1</figcaption>                            
+                        </figure>
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="./assests/Images/gallery/weddingCakes/19.jpg" itemprop="contentUrl" data-size="1600x1066">
+                                <img src="./assests/Images/gallery/weddingCakes/19-thumb.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Image caption  1</figcaption>                            
+                        </figure>
+                    
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="./assests/Images/gallery/weddingCakes/20.jpg" itemprop="contentUrl" data-size="1536x2048">
+                                <img src="./assests/Images/gallery/weddingCakes/20-thumb.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Image caption  1</figcaption>                                                        
+                        </figure>
+                    
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="./assests/Images/gallery/weddingCakes/21.jpg" itemprop="contentUrl" data-size="1200x800">
+                                <img src="./assests/Images/gallery/weddingCakes/21-thumb.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Image caption  1</figcaption>                                                
+                        </figure>
+                    
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="./assests/Images/gallery/weddingCakes/22.jpg" itemprop="contentUrl" data-size="720x960">
+                                <img src="./assests/Images/gallery/weddingCakes/22-thumb.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Image caption  1</figcaption>                            
+                        </figure>  
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="./assests/Images/gallery/weddingCakes/23.jpg" itemprop="contentUrl" data-size="750x1334">
+                                <img src="./assests/Images/gallery/weddingCakes/23-thumb.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Image caption  1</figcaption>                            
+                        </figure>                                              
 
-                </div>
+                    </div>
 
                     <div id="macy-r1" class="my-gallery panel panel-Two" itemscope itemtype="http://schema.org/ImageGallery">
                     
-                
                         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./assests/Images/gallery/weddingCakeSugarFlowers/1.jpg" itemprop="contentUrl" data-size="964x1024">
+                            <a href="./assests/Images/gallery/weddingCakeSugarFlowers/1.jpg" itemprop="contentUrl" data-size="640x426">
                                 <img src="./assests/Images/gallery/weddingCakeSugarFlowers/1.jpg" itemprop="thumbnail" alt="Image description" />
                             </a>
                             <figcaption itemprop="caption description">Image caption 2</figcaption>
                         </figure>
 
                         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./assests/Images/gallery/weddingCakeSugarFlowers/2.jpg" itemprop="contentUrl" data-size="964x1024">
+                            <a href="./assests/Images/gallery/weddingCakeSugarFlowers/2.jpg" itemprop="contentUrl" data-size="338x450">
                                 <img src="./assests/Images/gallery/weddingCakeSugarFlowers/2.jpg" itemprop="thumbnail" alt="Image description" />
                             </a>
                             <figcaption itemprop="caption description">Image caption 2</figcaption>
                         </figure>
                     
                         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./assests/Images/gallery/weddingCakeSugarFlowers/3.jpg" itemprop="contentUrl" data-size="964x1024">
+                            <a href="./assests/Images/gallery/weddingCakeSugarFlowers/3.jpg" itemprop="contentUrl" data-size="1536x2048">
                                 <img src="./assests/Images/gallery/weddingCakeSugarFlowers/3.jpg" itemprop="thumbnail" alt="Image description" />
                             </a>
                             <figcaption itemprop="caption description">Image caption 2</figcaption>
                         </figure>
                     
                         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./assests/Images/gallery/weddingCakeSugarFlowers/4.jpg" itemprop="contentUrl" data-size="964x1024">
+                            <a href="./assests/Images/gallery/weddingCakeSugarFlowers/4.jpg" itemprop="contentUrl" data-size="1536x2048">
                                 <img src="./assests/Images/gallery/weddingCakeSugarFlowers/4.jpg" itemprop="thumbnail" alt="Image description" />
                             </a>
                             <figcaption itemprop="caption description">Image caption 2</figcaption>
                         </figure>
                     
                         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./assests/Images/gallery/weddingCakeSugarFlowers/5.jpg" itemprop="contentUrl" data-size="964x1024">
+                            <a href="./assests/Images/gallery/weddingCakeSugarFlowers/5.jpg" itemprop="contentUrl" data-size="640x427">
                                 <img src="./assests/Images/gallery/weddingCakeSugarFlowers/5.jpg" itemprop="thumbnail" alt="Image description" />
                             </a>
                             <figcaption itemprop="caption description">Image caption 2</figcaption>
                         </figure>
                     
                         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./assests/Images/gallery/weddingCakeSugarFlowers/6.jpg" itemprop="contentUrl" data-size="964x1024">
+                            <a href="./assests/Images/gallery/weddingCakeSugarFlowers/6.jpg" itemprop="contentUrl" data-size="1536x2048">
                                 <img src="./assests/Images/gallery/weddingCakeSugarFlowers/6.jpg" itemprop="thumbnail" alt="Image description" />
                             </a>
                             <figcaption itemprop="caption description">Image caption 2</figcaption>
                         </figure>
                     
                         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./assests/Images/gallery/weddingCakeSugarFlowers/7.jpg" itemprop="contentUrl" data-size="964x1024">
+                            <a href="./assests/Images/gallery/weddingCakeSugarFlowers/7-thumb.jpg" itemprop="contentUrl" data-size="1536x2048">
                                 <img src="./assests/Images/gallery/weddingCakeSugarFlowers/7.jpg" itemprop="thumbnail" alt="Image description" />
                             </a>
                             <figcaption itemprop="caption description">Image caption 2</figcaption>
                         </figure>
                     
                         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                            <a href="./assests/Images/gallery/weddingCakeSugarFlowers/8.jpg" itemprop="contentUrl" data-size="964x1024">
+                            <a href="./assests/Images/gallery/weddingCakeSugarFlowers/8.jpg" itemprop="contentUrl" data-size="1600x1066">
                                 <img src="./assests/Images/gallery/weddingCakeSugarFlowers/8.jpg" itemprop="thumbnail" alt="Image description" />
                             </a>
                             <figcaption itemprop="caption description">Image caption 2</figcaption>
@@ -362,102 +373,121 @@
                         
                     
                             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                <a href="./assests/Images/gallery/desserts/1.jpg" itemprop="contentUrl" data-size="964x1024">
+                                <a href="./assests/Images/gallery/desserts/1.jpg" itemprop="contentUrl" data-size="750x1334">
                                     <img src="./assests/Images/gallery/desserts/1.jpg" itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 2</figcaption>
                             </figure>
     
                             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                <a href="./assests/Images/gallery/desserts/2.jpg" itemprop="contentUrl" data-size="964x1024">
-                                    <img src="./assests/Images/gallery/desserts/2.jpg" itemprop="thumbnail" alt="Image description" />
+                                <a href="./assests/Images/gallery/desserts/2.jpg" itemprop="contentUrl" data-size="600x550">
+                                    <img src="./assests/Images/gallery/desserts/2.jpg" itemprop="thumbnail" alt="Image description"/>
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 2</figcaption>
                             </figure>
                         
                             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                <a href="./assests/Images/gallery/desserts/3.jpg" itemprop="contentUrl" data-size="964x1024">
-                                    <img src="./assests/Images/gallery/desserts/3.jpg" itemprop="thumbnail" alt="Image description" />
+                                <a href="./assests/Images/gallery/desserts/3.jpg" itemprop="contentUrl" data-size="1008x1344">
+                                    <img src="./assests/Images/gallery/desserts/3-thumb.jpg" itemprop="thumbnail" alt="Image description"/>
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 2</figcaption>
                             </figure>
     
                             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                <a href="./assests/Images/gallery/desserts/4.jpg" itemprop="contentUrl" data-size="964x1024">
-                                    <img src="./assests/Images/gallery/desserts/4.jpg" itemprop="thumbnail" alt="Image description" />
+                                <a href="./assests/Images/gallery/desserts/4.jpg" itemprop="contentUrl" data-size="1334x750">
+                                    <img src="./assests/Images/gallery/desserts/4.jpg" itemprop="thumbnail" alt="Image description"/>
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 2</figcaption>
                             </figure>
                         
                             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                <a href="./assests/Images/gallery/desserts/5.jpg" itemprop="contentUrl" data-size="964x1024">
-                                    <img src="./assests/Images/gallery/desserts/5.jpg" itemprop="thumbnail" alt="Image description" />
+                                <a href="./assests/Images/gallery/desserts/5.jpg" itemprop="contentUrl" data-size="640x640">
+                                    <img src="./assests/Images/gallery/desserts/5.jpg" itemprop="thumbnail" alt="Image description"/>
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 2</figcaption>
                             </figure>
     
                             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                <a href="./assests/Images/gallery/desserts/6.jpg" itemprop="contentUrl" data-size="964x1024">
+                                <a href="./assests/Images/gallery/desserts/6.jpg" itemprop="contentUrl" data-size="613x612">
                                     <img src="./assests/Images/gallery/desserts/6.jpg" itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 2</figcaption>
                             </figure>
                         
                             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                <a href="./assests/Images/gallery/desserts/7.jpg" itemprop="contentUrl" data-size="964x1024">
-                                    <img src="./assests/Images/gallery/desserts/7.jpg" itemprop="thumbnail" alt="Image description" />
+                                <a href="./assests/Images/gallery/desserts/7.jpg" itemprop="contentUrl" data-size="1344x1008">
+                                    <img src="./assests/Images/gallery/desserts/7-thumb.jpg" itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 2</figcaption>
                             </figure>
     
                             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                <a href="./assests/Images/gallery/desserts/8.jpg" itemprop="contentUrl" data-size="964x1024">
-                                    <img src="./assests/Images/gallery/desserts/8.jpg" itemprop="thumbnail" alt="Image description" />
+                                <a href="./assests/Images/gallery/desserts/8.jpg" itemprop="contentUrl" data-size="4032x3024">
+                                    <img src="./assests/Images/gallery/desserts/8-thumb.jpg" itemprop="thumbnail" alt="Image description" />
+                                </a>
+                                <figcaption itemprop="caption description">Image caption 2</figcaption>
+                            </figure>
+                            
+
+                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="./assests/Images/gallery/desserts/9.jpg" itemprop="contentUrl" data-size="4032x3024">
+                                    <img src="./assests/Images/gallery/desserts/9.jpg" itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 2</figcaption>
                             </figure>
 
                             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                <a href="./assests/Images/gallery/desserts/Toppers/Topper 1.jpg" itemprop="contentUrl" data-size="964x1024">
+                                <a href="./assests/Images/gallery/desserts/10.jpg" itemprop="contentUrl" data-size="736x560">
+                                    <img src="./assests/Images/gallery/desserts/10.jpg" itemprop="thumbnail" alt="Image description" />
+                                </a>
+                                <figcaption itemprop="caption description">Image caption 2</figcaption>
+                            </figure>
+                    </div>
+                    
+                    <div id="macy-r3" class="my-gallery panel panel-four" itemscope itemtype="http://schema.org/ImageGallery"> 
+                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="./assests/Images/gallery/desserts/Toppers/Topper 1.jpg" itemprop="contentUrl" data-size="640x1136">
                                     <img src="./assests/Images/gallery/desserts/Toppers/Topper 1.jpg" itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 2</figcaption>
                             </figure>
     
                             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                <a href="./assests/Images/gallery/desserts/Toppers/Topper 2.jpg" itemprop="contentUrl" data-size="964x1024">
+                                <a href="./assests/Images/gallery/desserts/Toppers/Topper 2.jpg" itemprop="contentUrl" data-size="640x1136">
                                     <img src="./assests/Images/gallery/desserts/Toppers/Topper 2.jpg" itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 2</figcaption>
                             </figure>
                         
                             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                <a href="./assests/Images/gallery/desserts/Toppers/Topper 3.jpg" itemprop="contentUrl" data-size="964x1024">
+                                <a href="./assests/Images/gallery/desserts/Toppers/Topper 3.jpg" itemprop="contentUrl" data-size="1094x1140">
                                     <img src="./assests/Images/gallery/desserts/Toppers/Topper 3.jpg" itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 2</figcaption>
                             </figure>
     
                             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                <a href="./assests/Images/gallery/desserts/Toppers/Topper 4.jpg" itemprop="contentUrl" data-size="964x1024">
-                                    <img src="./assests/Images/gallery/desserts/Toppers/Topper 4.jpg" itemprop="thumbnail" alt="Image description" />
+                                <a href="./assests/Images/gallery/desserts/Toppers/Topper 4.jpg" itemprop="contentUrl" data-size="2448x3264">
+                                    <img src="./assests/Images/gallery/desserts/Toppers/Topper 4-thumb.jpg" itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 2</figcaption>
                             </figure>
+
                             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                <a href="./assests/Images/gallery/desserts/Toppers/Topper 5.jpg" itemprop="contentUrl" data-size="964x1024">
+                                <a href="./assests/Images/gallery/desserts/Toppers/Topper 5.jpg" itemprop="contentUrl" data-size="720x960">
                                     <img src="./assests/Images/gallery/desserts/Toppers/Topper 5.jpg" itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 2</figcaption>
                             </figure>
                         
                             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                <a href="./assests/Images/gallery/desserts/Toppers/Topper 6.jpg" itemprop="contentUrl" data-size="964x1024">
+                                <a href="./assests/Images/gallery/desserts/Toppers/Topper 6.jpg" itemprop="contentUrl" data-size="253x450">
                                     <img src="./assests/Images/gallery/desserts/Toppers/Topper 6.jpg" itemprop="thumbnail" alt="Image description" />
                                 </a>
                                 <figcaption itemprop="caption description">Image caption 2</figcaption>
                             </figure>
                     </div>
+
             </div>   
             
             
@@ -530,21 +560,25 @@
                  <!-- *********************************Start Testimonials ****************************** -->    
             <div id="testimonials" data-matching-link="#our-testimonials" class="page-section page-section--no-b-padding-until-medium page-section--testimonials"> 
                 
+                    <button  class="image-slider-left-button" onclick="plusDivs(-1)">&#8249;</button>
+                    <button  class ="image-slider-right-button" onclick="plusDivs(1)">&#8250;</button>
+
                 <div class="wrapper wrapper--no-padding-until-large">
                     <h2 class="section-title section-title--blue"><img class="section-title__icon" src="./assests/Images/Icons/comment.svg"><strong>Testimonials</strong></h2>
                 
+                        
                      <!-- ************** Start Testimonial Slider Page 0 **************** -->
 
-                        <div class="mySlides-Testi row row--gutters row--equal-height-at-large row--gutters-small row--t-padding generic-content-container"">  
+                        <div class="mySlides-Testi row-custom row-custom--gutters row-custom--equal-height-at-large row-custom--gutters-small row-custom--t-padding generic-content-container">  
                             
                             <!-- ************** Start Testimonial Index 0 **************** -->
 
-                            <div class="row__large-4">
+                            <div class="row-custom__large-4">
                                 <div class="testimonial">
                                     <div class="testimonial__photo">
                                         <img src="./assests/Images/Icons/women-icon.png">
                                     </div>
-                                    <h3 class="testimonial__title">jan Doe</h3>
+                                    <h3 class="testimonial__title">jasssn Doe</h3>
                                     <div class="testimonial__title">
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -564,7 +598,7 @@
 
                             <!-- ************** Start Testimonial Index 1 **************** -->
                             
-                            <div class="row__large-4">
+                            <div class="row-custom__large-4">
                                 <div class="testimonial">
                                     <div class="testimonial__photo">    
                                         <img src="./assests/Images/Icons/men-icon.png">
@@ -589,7 +623,7 @@
 
                             <!-- ************** Start Testimonial Index 2 **************** -->
 
-                            <div class="row__large-4">
+                            <div class="row-custom__large-4">
                                 <div class="testimonial testimonial--last">
                                     <div class="testimonial__photo">
                                         <img src="./assests/Images/Icons/women-icon.png">
@@ -618,11 +652,11 @@
             
                 <!-- ************** Start Testimonial Slider Page 1 **************** -->
 
-                    <div class="mySlides-Testi row row--gutters row--equal-height-at-large row--gutters-small row--t-padding generic-content-container"">  
+                    <div class="mySlides-Testi row-custom row-custom--gutters row-custom--equal-height-at-large row-custom--gutters-small row-custom--t-padding">  
                         
                         <!-- ************** Start Testimonial Index 0 **************** -->
 
-                        <div class="row__large-4">
+                        <div class="row-custom__large-4">
                             <div class="testimonial">
                                 <div class="testimonial__photo">
                                     <img src="./assests/Images/Icons/women-icon.png">
@@ -647,7 +681,7 @@
 
                         <!-- ************** Start Testimonial Index 1 **************** -->
                         
-                        <div class="row__large-4">
+                        <div class="row-custom__large-4">
                             <div class="testimonial">
                                 <div class="testimonial__photo">    
                                     <img src="./assests/Images/Icons/men-icon.png">
@@ -672,7 +706,7 @@
 
                         <!-- ************** Start Testimonial Index 2 **************** -->
 
-                        <div class="row__large-4">
+                        <div class="row-custom__large-4">
                             <div class="testimonial testimonial--last">
                                 <div class="testimonial__photo">
                                     <img src="./assests/Images/Icons/women-icon.png">
@@ -699,12 +733,7 @@
 
                 <!-- ************** End Testimonial Slider Page 1 **************** -->
                 </div>
-                <!-- <button  class="carlo" onclick="plusDivs(-1)">Left</button>
-                <button  class="carlo" onclick="plusDivs(1)">Right</button> -->
             </div>
-
-
-             
 
         <!-- ********************************* Start Discover - US ****************************** -->
 
@@ -765,42 +794,45 @@
                          </div>    
                      </div>
                      </div>
-                        <form class="contact-Form" method="post" action="#">
+                        <form id="contact-Info" class="contact-Form" method="post" action="#">
 
                             <div class="contact-Form__flex-field">
-                                    <input type="text" class="fontAwesome" name="userName" placeholder="&#xf2c0; Name" value="">
+                                    <input type="text" class="fontAwesome" id="inputName" name="userName" placeholder="&#xf2c0; Name" value="">
                             </div>
 
                             <div class="contact-Form__flex-field">
 
-                                    <input type="text" class="fontAwesome" name="emailAddress" placeholder="&#xf003;  Email" value="">
+                                    <input type="text" class="fontAwesome" id="inputEmail" name="emailAddress" placeholder="&#xf003;  Email" value="">
                             </div>
 
                             <div class="contact-Form__flex-field">
-                                    <input type="text" class="fontAwesome" name="phoneNumber" placeholder="&#xf095;  Phone" value="">
+                                    <input type="text" class="fontAwesome" id="inputphNum" name="phoneNumber" placeholder="&#xf095;  Phone" value="">
                             </div>
 
                             <div class="contact-Form__flex-field">
-                                    <input type="text" class="fontAwesome" name="Date&Time" placeholder="&#xf073;  Date & Time" value="">
+                                    <input type="text" class="fontAwesome" id="inputDtTime" name="Date&Time" placeholder="&#xf073;  Date & Time" value="">
                             </div>
 
                             <div class="contact-Form__flex-field">
                                     
-                                    <input type="text" class="fontAwesome" name="ServingSize" placeholder="&#xf196;  Serving Size" value="">
+                                    <input type="text" class="fontAwesome" id="inputSrSize" name="ServingSize" placeholder="&#xf196;  Serving Size" value="">
                                 </div>
 
                             <div class="contact-Form__flex-field">
-                                    <input type="text" class="fontAwesome" name="occasionType" placeholder="&#xf1fd;  Occasion Type" value="">                               
+                                    <input type="text" class="fontAwesome" id="" name="occasionType" placeholder="&#xf1fd;  Occasion Type" value="">                               
                             </div>
 
-                            <div class="contact-Form__flex-field">
+                            <!-- <div class="contact-Form__flex-field">
                                 <input type="text" class="fontAwesome" name="preference" placeholder="&#xf013;  Preference" value="">
                             </div>
 
                             <div class="contact-Form__flex-field">
                                     <input type="text" class="fontAwesome" name="Appontment Type" placeholder="&#xf133;  Appontment Type" value="">
-                            </div>
+                            </div> -->
 
+                            <div class="contact-Form__flex-field_textArea">
+                                <textarea rows="4" cols="50" placeholder="Describe yourself here..."></textarea>                                
+                            </div>
                             <div class="contact-Form__flex-field">
 
                                 <input type="submit" value="Submit">
@@ -963,103 +995,91 @@
 
 
   </script>
-       <script src="./assests/styles/vendor/jquery/jquery.min.js"></script>
-        <script src="./assests/styles/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+            <!-- build:js assests/vendor/jquery/jquery.min.js -->
+            <script src="./assests/styles/vendor/jquery/jquery.min.js"></script>
+            <!-- endbuild -->    
+      <!-- build:js assests/vendor/bootstrap/js/bootstrap.bundle.min.js -->
+      <script src="./assests/styles/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <!-- endbuild -->    
+
+
         <script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js'></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js'></script>
+        
+        <!-- build:js assests/scripts/App.js -->
         <script src="./temp/scripts/App.js"></script>
-
+        <!-- endbuild -->       
 
         
 
 
-<script>
-    var masonry = new Macy({
-        container: '#macy-r',
-        trueOrder: false,
-        waitForImages: false,
-        useOwnImageLoader: false,
-        debug: true,
-        mobileFirst: true,
-        columns: 1,
-        margin: 24,
-        breakAt: {
-            1200: 4,
-            940: 5,
-            520: 3,
-            400: 2
-        }
-    });
-    var masonry = new Macy({
-        container: '#macy-r1',
-        trueOrder: false,
-        waitForImages: false,
-        useOwnImageLoader: false,
-        debug: true,
-        mobileFirst: true,
-        columns: 1,
-        margin: 24,
-        breakAt: {
-            1200: 4,
-            940: 5,
-            520: 3,
-            400: 2
-        }
-    });
-    var masonry = new Macy({
-        container: '#macy-r2',
-        trueOrder: false,
-        waitForImages: false,
-        useOwnImageLoader: false,
-        debug: true,
-        mobileFirst: true,
-        columns: 1,
-        margin: 24,
-        breakAt: {
-            1200: 4,
-            940: 5,
-            520: 3,
-            400: 2
-        }
-    });
-</script>
+    <script>
+    showDivs(0);
+        var slideIndex = 1;
 
-<script> 
-gallerySLider(0);
-function gallerySLider(index) {
-    var i;
-    var x = document.getElementsByClassName("panel");
-    var y = document.getElementsByClassName("photo-stack");
-   
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none"; 
-      y[i].style.opacity = 0.5; 
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides-Testi");
+            if (n > x.length) {slideIndex = 1} 
+            if (n < 1) {slideIndex = x.length} ;
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none"; 
+            }
+            x[slideIndex-1].style.display = "flex"; 
+        }
+    </script>
+
+    <script> 
+    gallerySLider(0);
+    function gallerySLider(index) {
+        var i;
+        var x = document.getElementsByClassName("panel");
+        // var y = document.getElementsByClassName("photo-stack");
+    
+        for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+        //   y[i].style.opacity = 0.5; 
+        }
+        x[index].style.display = "block";
+        // y[index].style.opacity = 1;
     }
-    x[index].style.display = "block"; 
-    y[index].style.opacity = 1; 
-}
-        
-        // function myFunction() {
-        // var x = document.getElementsByClassName("panel-One");
-        //     if (x[0].style.display === "block") {
-        //         x[0].style.display = "flex";
-        //     } else {
-        //         x[0].style.display = "block";
-        //     }
-        // }
-                    //   $(document).ready(function(){
-                    //       $("#imageSlide1").click(function(){
-                    //         $(".panel").not(".panel-One").slideUp();
-                    //          $(".panel-One").slideToggle("slow");
-                    //       });
-                    //       $("#imageSlide2").click(function(){
-                    //         $(".panel").not(".panel-Two").slideUp();
-                    //          $(".panel-Two").slideToggle("slow");
-                    //       });
-                    //       $("#imageSlide3").click(function(){
-                    //         $(".panel").not(".panel-Three").slideUp();
-                    //         $(".panel-Three").slideToggle("slow");
-                    //       });
-                    //   });
-                      </script>
-    </body>
+            
+    </script>
+
+    <script>
+    function submitForm() {
+    $(document).ready(function() {
+        return $('#contactUS').submit(function(e) {
+        var email, message, name;
+        name = document.getElementById('inputName');
+        email = document.getElementById('inputEmail');
+        message = document.getElementById('inputMessage');
+        if (!name.value || !email.value || !message.value) {
+            alertify.error('Please check your entries');
+            return false;
+        } else {
+            $.ajax({
+            method: 'POST',
+            url: '//formspree.io/bharat.varla1@gmail.com',
+            data: $('#contactUS').serialize(),
+            datatype: 'json'
+            });
+            e.preventDefault();
+            $(this).get(0).reset();
+            return alertify.success('Message sent');
+        }
+        });
+    });
+
+    }
+    </script>
+ 
+</body>

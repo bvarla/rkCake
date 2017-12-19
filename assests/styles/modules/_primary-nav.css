@@ -34,7 +34,8 @@
         transition: border-bottom 0.25;
 
         &.is-current-link{
-           color:#fabb69;
+            display: inline-block;
+            border-bottom: 4px solid #f88d6c;
         }
     }
 

@@ -1,13 +1,18 @@
 .site-header{
     position: fixed;
-    background-color: rgba(47,85,140,.3);
+    background-color: rgba(47,85,140,.8);
     width: 100%;
     z-index: 2;
 
     @mixin atMedium {
-        position: fixed;
         background-color: rgba(47,85,140,.3);
 
+        &--dark{
+            background-color: rgb(237,99,98);
+        }
+    }
+    @mixin atLarge {
+        background-color: rgba(47,85,140,.3);
         &--dark{
             background-color: rgb(237,99,98);
         }

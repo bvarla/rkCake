@@ -7,6 +7,8 @@
 
     &--testimonials{
         background-color:#e0e6ef;
+        position: relative;
+
         @mixin atLarge{
             background: url("../../assests/Images/testimonials-bg.jpg") top center no-repeat;
             background-size:cover;
