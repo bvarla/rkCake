@@ -269,11 +269,14 @@ menu {
     max-width: 100%;
     height:auto;
 }.carousel-item {
-    height: 100vh;
+    height: 0;
     min-height: 300px;
     background: no-repeat center center scroll;
     background-size: cover;
-  }.large_Img_view{
+  }@media (min-width: 800px){.carousel-item {    
+        height: 100vh;
+  }
+    }.large_Img_view{
     border-bottom: 10px solid lightsteelblue;
     position:relative;
 }.large_Img_view_div_text{
@@ -558,7 +561,7 @@ menu {
 }.row-custom--gutters-large{
     margin-right: 0;
   }.row-custom--gutters>div{
-      padding-right: 0;
+      padding-right: 65px;
   }@media (min-width: 1010px){.row-custom--gutters>div{   
         padding-right: 65px
   }
@@ -585,7 +588,7 @@ menu {
               -ms-flex-align: start;
                   align-items: flex-start;
           float:left;
-          width:33.33%;
+          width:43.33%;
       }
     }/* Begin Equal Height Rules */@media (min-width: 800px){
        @media (min-width: 800px){.row-custom--equal-height-at-medium{
@@ -637,10 +640,19 @@ menu {
                 flex-direction: row;
          margin-bottom: 0
 }
+    }.single-item__gutter{
+    padding-right: 0;
+    border-radius: 25px;
+
+}@media (min-width: 800px){.single-item__gutter{    
+    padding-right: 0.1%
+
+}
     }.testimonial{
     background-color:rgba(255,255,255,.8);
     padding:0 18px 1px 18px;
     margin-bottom :98px;
+    border-radius: 15px;
 }.testimonial__rating{
         text-align: center;
     }.testimonial__textInfo{
@@ -674,9 +686,9 @@ menu {
         overflow:hidden;
         width:160px;
         height:160px;
-        margin:0 auto -80px auto;
+        margin:0 auto 0 auto;
         position:relative;
-        top:-80px;
+        top:0px;
         border:6px solid rgba(255,255,255,.8);
     }.testimonial__title{
         color:orange;
@@ -752,7 +764,7 @@ menu {
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}/* Style the submit button with a specific background color etc */input[type=submit] {
+}/* Style the submit button with a specific background color etc */#subForm{
 		background-color: #ed6362;
 		border: 1px solid #ed6362;
     color: white;
@@ -762,8 +774,9 @@ menu {
 		border-radius: 50px;
     padding: 12px;
     border: none;
-    cursor: pointer;
-}/* When moving the mouse over the submit button, add a darker green color */input[type=submit]:hover {
+		cursor: pointer;
+		outline: none;
+}/* When moving the mouse over the submit button, add a darker green color */#subForm:hover {
 		background-color: #fff;
 		border: 1px solid #ed6362;
 		color: #36454f;
@@ -839,9 +852,6 @@ menu {
 	background-size: 30px 30px;
 	background-position: 11px 8px;
 	background-repeat: no-repeat;
-}input:hover, textarea:hover,
-input:focus, textarea:focus {
-	background-color:white;
 }#button-blue{
 	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 	float:left;
@@ -885,11 +895,17 @@ input:focus, textarea:focus {
 }/*Insert this style in your css*/.fontAwesome {
   font-family: Helvetica, 'FontAwesome', sans-serif;
 }textarea{
+	outline: none;
 	border-radius: 15px;
 	background-color: rgba(17, 16, 16, 0.205);
 }input[type="text"]{
 	border-radius: 50px;
 	background-color: rgba(17, 16, 16, 0.205);
+	outline: none;
+}input[type="datetime-local"]{
+	border-radius: 50px;
+	background-color: rgba(17, 16, 16, 0.205);
+	outline: none;
 }.contact-Form{
 		width: 100%;
 		margin-top: 5px;
@@ -940,7 +956,18 @@ input:focus, textarea:focus {
         margin-top: 45px;
         -ms-flex-pack: distribute;
             justify-content: space-around;
-    }.fa {
+    }.cakes-list{
+ width:50%; 
+}@media (min-width: 800px){.cakes-list{
+	width:30% 
+}
+    }.success-Msg{
+	font-size: 25px;
+	padding: 2px 0;
+	color: #f88d6c;
+	text-align: center;
+	opacity: 0;
+}.fa {
     padding: 10px;
     font-size: 15px;
     width: 35px;
@@ -984,7 +1011,6 @@ input:focus, textarea:focus {
         -ms-flex-align: start;
             align-items: flex-start;
     margin-top: 80px;
-    height: 600px;
     -ms-flex-pack: distribute;
         justify-content: space-around;
 }.flavor_container__guide_img{
@@ -992,6 +1018,7 @@ input:focus, textarea:focus {
     }.flavor_container h4{
         color: #f88d6c;
     }.flavours__navItems{
+       overflow: hidden;
        height: 375px;
        background-color: #ed6362;
        width:40%;

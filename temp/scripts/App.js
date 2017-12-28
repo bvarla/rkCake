@@ -11126,8 +11126,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var mobileMenu = new _MobileMenu2.default();
 var flavourSelection = new _flavourSelection2.default();
 var testimonials = new _testimonials2.default();
-var revealOnScrollTesti = new _RevealOnScroll2.default((0, _jquery2.default)(".mySlides-Testi"), "85%");
-var revealOnScrollContact = new _RevealOnScroll2.default((0, _jquery2.default)(".mySlides-Testi"), "85%");
+// var revealOnScrollTesti = new RevealOnScroll($(".mySlides-Testi"),"85%");
+// var revealOnScrollContact = new RevealOnScroll($(".mySlides-Testi"),"85%");
 var stickyHeader = new _SticyHeader2.default();
 var imageGallery = new _imageGallery2.default();
 

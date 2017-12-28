@@ -9,8 +9,8 @@ import ImageGallery from './modules/imageGallery';
 var mobileMenu = new MobileMenu();
 var flavourSelection = new FlavourSelection();
 var testimonials = new Testimonials();
-var revealOnScrollTesti = new RevealOnScroll($(".mySlides-Testi"),"85%");
-var revealOnScrollContact = new RevealOnScroll($(".mySlides-Testi"),"85%");
+// var revealOnScrollTesti = new RevealOnScroll($(".mySlides-Testi"),"85%");
+// var revealOnScrollContact = new RevealOnScroll($(".mySlides-Testi"),"85%");
 var stickyHeader = new StickyHeader();
 var imageGallery = new ImageGallery();
 

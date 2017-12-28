@@ -17,7 +17,7 @@
   }
 
   &--gutters>div{
-      padding-right: 0;
+      padding-right: 65px;
      
       @mixin atLarge{   
         padding-right: 65px;
@@ -53,7 +53,7 @@
         &__large-4 {
           align-items: flex-start;
           float:left;
-          width:33.33%;
+          width:43.33%;
       }
 
      

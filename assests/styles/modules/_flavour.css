@@ -2,7 +2,6 @@
     display: flex;
     align-items: flex-start;
     margin-top: 80px;
-    height: 600px;
     justify-content: space-around;
 
     &__guide_img{
@@ -17,6 +16,7 @@
 .flavours{
 
     &__navItems{
+       overflow: hidden;
        height: 375px;
        background-color: #ed6362;
        width:40%;

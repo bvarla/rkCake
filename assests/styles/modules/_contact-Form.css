@@ -14,7 +14,7 @@ input[type=text], select, textarea {
 }
 
 /* Style the submit button with a specific background color etc */
-input[type=submit] {
+#subForm{
 		background-color: #ed6362;
 		border: 1px solid #ed6362;
     color: white;
@@ -24,11 +24,12 @@ input[type=submit] {
 		border-radius: 50px;
     padding: 12px;
     border: none;
-    cursor: pointer;
+		cursor: pointer;
+		outline: none;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
+#subForm:hover {
 		background-color: #fff;
 		border: 1px solid #ed6362;
 		color: #36454f;
@@ -130,11 +131,6 @@ input[type=submit]:hover {
 	background-repeat: no-repeat;
 }
 
-input:hover, textarea:hover,
-input:focus, textarea:focus {
-	background-color:white;
-}
-
 #button-blue{
 	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 	float:left;
@@ -199,6 +195,7 @@ input:focus, textarea:focus {
 }
 
 textarea{
+	outline: none;
 	border-radius: 15px;
 	background-color: rgba(17, 16, 16, 0.205);
 }
@@ -206,6 +203,13 @@ textarea{
 input[type="text"]{
 	border-radius: 50px;
 	background-color: rgba(17, 16, 16, 0.205);
+	outline: none;
+}
+
+input[type="datetime-local"]{
+	border-radius: 50px;
+	background-color: rgba(17, 16, 16, 0.205);
+	outline: none;
 }
 
 .contact-Form{
@@ -253,6 +257,21 @@ input[type="text"]{
         justify-content: space-around;
     }
 
+}
+
+.cakes-list{
+ width:50%;
+ @mixin atMedium{
+	width:30%;
+	} 
+}
+
+.success-Msg{
+	font-size: 25px;
+	padding: 2px 0;
+	color: #f88d6c;
+	text-align: center;
+	opacity: 0;
 }
 
 .fa {
