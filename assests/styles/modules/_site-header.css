@@ -2,7 +2,7 @@
     position: fixed;
     background-color: rgba(47,85,140,.8);
     width: 100%;
-    z-index: 2;
+    z-index:11;
 
     @mixin atMedium {
         background-color: rgba(47,85,140,.3);
