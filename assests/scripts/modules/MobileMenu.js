@@ -7,12 +7,14 @@ class MobileMenu{
 
  this.ourHome =  $("#our-home");
  this.ourAboutUs =  $("#our-aboutUs");
+ this.ourGallery =  $("#our-gallery");
  this.ourTestimonials =  $("#our-testimonials");
  this.ourContactUs =  $("#our-contactUs");
  this.ourFlavours =  $("#our-flavours");
 
  this.ourHome.click(this.toggleTheMenu.bind(this));
  this.ourAboutUs.click(this.toggleTheMenu.bind(this));
+ this.ourGallery.click(this.toggleTheMenu.bind(this));
  this.ourTestimonials.click(this.toggleTheMenu.bind(this));
  this.ourContactUs.click(this.toggleTheMenu.bind(this));
  this.ourFlavours.click(this.toggleTheMenu.bind(this));

@@ -11161,12 +11161,14 @@ var MobileMenu = function () {
 
     this.ourHome = (0, _jquery2.default)("#our-home");
     this.ourAboutUs = (0, _jquery2.default)("#our-aboutUs");
+    this.ourGallery = (0, _jquery2.default)("#our-gallery");
     this.ourTestimonials = (0, _jquery2.default)("#our-testimonials");
     this.ourContactUs = (0, _jquery2.default)("#our-contactUs");
     this.ourFlavours = (0, _jquery2.default)("#our-flavours");
 
     this.ourHome.click(this.toggleTheMenu.bind(this));
     this.ourAboutUs.click(this.toggleTheMenu.bind(this));
+    this.ourGallery.click(this.toggleTheMenu.bind(this));
     this.ourTestimonials.click(this.toggleTheMenu.bind(this));
     this.ourContactUs.click(this.toggleTheMenu.bind(this));
     this.ourFlavours.click(this.toggleTheMenu.bind(this));
